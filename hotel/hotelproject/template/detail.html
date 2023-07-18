@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+<img src="{{food1.img.url}}">
+{{food1.name}}
+{{food1.desc}}
+{{food1.rate}}
+<a class="btn btn-warning href="{% url 'foodapp:delete' Food.id %}">Update></a><br>
+
+<a class="btn btn-danger href="{% url 'fooapp:delete' Food.id %}">Delete></a><br>
+
+{% endblock %}
